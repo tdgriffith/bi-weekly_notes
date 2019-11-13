@@ -63,6 +63,21 @@ November 13, 2019
 
 <!-- .slide: data-background="#767171" class="dark" -->
 
+## Other Players
+- [Chad Jenkins, Michigan](https://web.eecs.umich.edu/~ocj/)
+ - [Semantic Robot Programming](https://www.youtube.com/watch?v=ZJLD_6v88KA&feature=youtu.be)
+ - "make the real world programmable"
+- [Tim Barfoot, Toronto](http://asrl.utias.utoronto.ca/~tdb/)
+ - [Visual Teach and Repeat](https://www.youtube.com/watch?time_continue=3&v=udI328uO7Qg)
+ - Single sensor, no feedback
+- [Sergey Levine, Berkeley](https://people.eecs.berkeley.edu/~svlevine/)
+  - [Shared Autonomy](https://bair.berkeley.edu/blog/2018/04/18/shared-autonomy/)
+  - [Learning to Use Tools](https://www.technologyreview.com/s/613304/a-robot-has-figured-out-how-to-use-tools/)_
+
+---
+
+<!-- .slide: data-background="#767171" class="dark" -->
+
 ## Action Items
 Implement in a Jupyter game
 :blue_car:

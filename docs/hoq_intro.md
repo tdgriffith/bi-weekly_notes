@@ -1,87 +1,56 @@
 <!-- .slide: data-background="#500000" class="dark" -->
 
-# HoQ for Autonomy
+# Bi-Weekly Notes
 
-## Introductory Discussion 
+## OMA and ANNs
 
 
 
-November 13, 2019
+2020-03-05
 
 ---
 
 <!-- .slide: data-background="#767171" class="dark" -->
 
-## First things first
+## OMA for EEG
 
-- Center of Pressure Seat   
+<img src="img/OMA.gif" alt="HoQ Overview" style="width:800px;">  
 
 ---
 
 
 <!-- .slide: data-background="#767171" class="dark" -->
 
-## Lit Review
-- [Chad Jenkins, Michigan](https://web.eecs.umich.edu/~ocj/)
- - [Semantic Robot Programming](https://www.youtube.com/watch?v=ZJLD_6v88KA&feature=youtu.be)
- - "make the real world programmable"
-- [Tim Barfoot, Toronto](http://asrl.utias.utoronto.ca/~tdb/)
- - [Visual Teach and Repeat](https://www.youtube.com/watch?time_continue=3&v=udI328uO7Qg)
- - Single sensor, no feedback
-- [Sergey Levine, Berkeley](https://people.eecs.berkeley.edu/~svlevine/)
-  - [Shared Autonomy](https://bair.berkeley.edu/blog/2018/04/18/shared-autonomy/)
-  - [Learning to Use Tools](https://www.technologyreview.com/s/613304/a-robot-has-figured-out-how-to-use-tools/)
+## OMA Questions
+- Are the channels connected like spring-mass cart systems?
+- Which algorithm is best, more importantly how to verify?
 
 ---
 
 <!-- .slide: data-background="#767171" class="dark" -->
 
 
-## What Does the HoQ Say?
- <img src="img/hoq.png" alt="HoQ Overview" style="width:800px;"> 
+## EEG Neural Nets: New Architecture
+- There's currently not enough info in the single matrix to learn from
+- NN doesn't care if heatmap is BW
+- There are multiple ways to visualize TS data
+
+| | | |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="1604" alt="gaf" src="img/gaf.png">  |  <img width="1604" alt="rp" src="img/rp.png">|<img width="1604" alt="mtf" src="img/mtf.png">|
+
 
 ---
 
 <!-- .slide: data-background="#767171" class="dark" -->
 
-## My Thoughts on Application
-| Probability | State        | Accelerate | Decelerate | Stop  | Constant |
-|-------------|--------------|------------|------------|-------|----------|
-|  .95        | Red Light    | 0          | 9          | 9     | 0        |
-| .03         | Yellow Light | 3          | 3          | 0     | 9        |
-|  .02        | Green Light  | 1          | 0          | 0     |  9       |
-|             | Importance   | 0.6%       | 48.7%      | 48.2% | 2.53%    |
+## EEG Neural Nets: New Architecture
+<img src="img/rgb.png" alt="HoQ Overview" style="width:800px;"> 
 
 ---
 
 <!-- .slide: data-background="#767171" class="dark" -->
 
-## More Depth
-
-[Brainstorm Scratch Paper](https://docs.google.com/spreadsheets/d/1-miV_nTWT6CTp50ss_0I4ry6K127J0W6t3MZOVOl0Lc/edit?usp=sharing)
-
----
-
-<!-- .slide: data-background="#767171" class="dark" -->
-
-## Open Questions
-- Is a single row-sum operation sufficient?
-  - Can we assign math meaning to the roof?
-- How to shift in time?
-  - Discrete system?
-- Algorithm to fill matrix:
-  - ANN is obvious
-  - Simple stats ok too       
-- Literature is **very** sparse
-- Dedicating independent matricies
-
----
-
-<!-- .slide: data-background="#767171" class="dark" -->
-
-## Action Items
-Implement in a Jupyter game
-:blue_car:
 
 
 

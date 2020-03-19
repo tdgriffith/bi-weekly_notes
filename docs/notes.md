@@ -12,7 +12,7 @@
 
 <!-- .slide: data-background="#767171" class="dark" -->
 
-## Plots
+## Single Subject
 
 <section>
 <img src="img/S04/S4E1.png" alt="HoQ Overview" style="width:800px;"> 
@@ -35,13 +35,25 @@
 <section>
 <img src="img/S04/S4E37.png" alt="HoQ Overview" style="width:800px;"> 
 </section>
+<section>
+<img src="img/S04/S4E27.png" alt="HoQ Overview" style="width:800px;"> 
+</section>
+<section>
+<img src="img/S04/S4E22.png" alt="HoQ Overview" style="width:800px;"> 
+</section>
+<section>
+<img src="img/S04/S4E36.png" alt="HoQ Overview" style="width:800px;"> 
+</section>
+<section>
+<img src="img/S04/S4E28.png" alt="HoQ Overview" style="width:800px;"> 
+</section>
 
 ---
 
 
 <!-- .slide: data-background="#767171" class="dark" -->
 
-## Plots 2
+## Subject Comparison
 
 <section>
 <img src="img/S01S20/S01S20-compE1.png" alt="HoQ Overview" style="width:800px;"> 
@@ -62,7 +74,40 @@
 <img src="img/S01S20/S01S20-compE19.png" alt="HoQ Overview" style="width:800px;"> 
 </section>
 <section>
+<img src="img/S01S20/S01S20-compE20.png" alt="HoQ Overview" style="width:800px;"> 
+</section>
+<section>
+<img src="img/S01S20/S01S20-compE21.png" alt="HoQ Overview" style="width:800px;"> 
+</section>
+<section>
+<img src="img/S01S20/S01S20-compE22.png" alt="HoQ Overview" style="width:800px;"> 
+</section>
+<section>
+<img src="img/S01S20/S01S20-compE23.png" alt="HoQ Overview" style="width:800px;"> 
+</section>
+<section>
+<img src="img/S01S20/S01S20-compE24.png" alt="HoQ Overview" style="width:800px;"> 
+</section>
+<section>
+<img src="img/S01S20/S01S20-compE25.png" alt="HoQ Overview" style="width:800px;"> 
+</section>
+<section>
+<img src="img/S01S20/S01S20-compE26.png" alt="HoQ Overview" style="width:800px;"> 
+</section>
+<section>
 <img src="img/S01S20/S01S20-compE27.png" alt="HoQ Overview" style="width:800px;"> 
+</section>
+<section>
+<img src="img/S01S20/S01S20-compE28.png" alt="HoQ Overview" style="width:800px;"> 
+</section>
+<section>
+<img src="img/S01S20/S01S20-compE29.png" alt="HoQ Overview" style="width:800px;"> 
+</section>
+<section>
+<img src="img/S01S20/S01S20-compE30.png" alt="HoQ Overview" style="width:800px;"> 
+</section>
+<section>
+<img src="img/S01S20/S01S20-compE31.png" alt="HoQ Overview" style="width:800px;"> 
 </section>
 
 ---

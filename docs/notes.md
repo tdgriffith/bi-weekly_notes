@@ -2,136 +2,89 @@
 
 # Bi-Weekly Notes
 
-## Complex Eigenvalues
+## More on OMA and DEAP
 
 
 
-2020-03-19
-
----
-
-<!-- .slide: data-background="#767171" class="dark" -->
-
-## Single Subject
-
-<section>
-<img src="img/S04/S4E1.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S04/S4E2.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S04/S4E3.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S04/S4E18.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S04/S4E19.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S04/S4E20.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S04/S4E37.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S04/S4E27.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S04/S4E22.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S04/S4E36.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S04/S4E28.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-
----
-
-
-<!-- .slide: data-background="#767171" class="dark" -->
-
-## Subject Comparison
-
-<section>
-<img src="img/S01S20/S01S20-compE1.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S01S20/S01S20-compE2.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S01S20/S01S20-compE3.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S01S20/S01S20-compE18.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S01S20/S01S20-compE35.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S01S20/S01S20-compE19.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S01S20/S01S20-compE20.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S01S20/S01S20-compE21.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S01S20/S01S20-compE22.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S01S20/S01S20-compE23.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S01S20/S01S20-compE24.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S01S20/S01S20-compE25.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S01S20/S01S20-compE26.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S01S20/S01S20-compE27.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S01S20/S01S20-compE28.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S01S20/S01S20-compE29.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S01S20/S01S20-compE30.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
-<section>
-<img src="img/S01S20/S01S20-compE31.png" alt="HoQ Overview" style="width:800px;"> 
-</section>
+2020-04-15
 
 ---
 
 <!-- .slide: data-background="#767171" class="dark" -->
 
+## Last Time:
 
-## Questions from Literature and Data Analysis
-- Very few of the A matrices are stable
-- Difficult to select proper system order
-    - Always a complex pair, so system order is twice the modes
-- Doesn't account for non-linearity
-- Ok to have a new A for every subject/emotion? 
-    - Currently, not an overarching A matrix
-    - Difficult to separate modes that are close in freq space.
+- Looked at different output only state space algorithms
+- How to get a single model for cognitive state?
+    - Average the eigenvectors reconstruct A
+    - Average A and determine the eigenvectors
 
-<!-- | | | |
-|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="1604" alt="gaf" src="img/gaf.png">  |  <img width="1604" alt="rp" src="img/rp.png">|<img width="1604" alt="mtf" src="img/mtf.png">|
+<img src="img/T5avg.png" alt="Trial 5, Averaged" style="width:500px;"> 
 
 
---- -->
+
+---
 
 <!-- .slide: data-background="#767171" class="dark" -->
+
+## Average the Eigenvectors:
+- Reconstruct the A matrix from averaged eigenvectors
+- L.I. eigenvectors, but no guarantee of orthogonality or SA
+
+<img src="img/T36comps.png" alt="Trial 36, stats" style="width:1500px;">
+
+
+
+---
+
+<!-- .slide: data-background="#767171" class="dark" -->
+
+## Average the A:
+- Recalculate eigenvectors after averaging the A matrix
+- L.I. eigenvectors, but again no guarantee of orthogonality or SA
+
+<img src="img/T36avgofA.png" alt="Trial 36, A average" style="width:800px;">
+
+
+
+---
+
+<!-- .slide: data-background="#767171" class="dark" -->
+
+## What if we force SA?:
+- Recalculate eigenvectors after averaging the A matrix and forcing SA (least squares)
+- L.I., orthogonal eigenvectors for distinct eigenvalues
+
+<img src="img/T36hermofA.png" alt="Trial 36, A average" style="width:800px;">
+<img src="img/T16hermofA.png" alt="Trial 36, A average" style="width:800px;">
+
+
+
+---
+
+<!-- .slide: data-background="#767171" class="dark" -->
+
+## What have we learned:
+- OMA-data seems to be the most consistent across the data set
+- If we postulate that pure emotions should be standing waves, SA transform is promising
+    - Need to track the norm of the lost components somehow
+    - But, need to understand why eigenvectors don't stay complex
+        - SA does not restrict this
+- It's too difficult for a human to look at these and learn anything
+
+
+
+---
+
+<!-- .slide: data-background="#767171" class="dark" -->
+
+## Next Steps:
+- Heat map for ML
+    - Exploratory analysis
+
+- <img src="img/test_hmap.png" alt="Trial 36, A average" style="width:900px;">
+
+
 
 
 

@@ -140,6 +140,8 @@
 - ML heatmap analysis may suggest the best algorithm/representation
 - Early work with all channels is promising. 
 
+- All plots [here](https://drive.google.com/drive/folders/1vuMJPsxFmVqm2SRdVpqBoa8_NeZ_Jn9Y?usp=sharing)
+
 
 
 

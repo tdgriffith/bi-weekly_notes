@@ -52,11 +52,12 @@
 <!-- .slide: data-background="#767171" class="dark" -->
 
 ## What if we force SA?:
-- Recalculate eigenvectors after averaging the A matrix and forcing SA (least squares)
+- Recalculate eigenvectors after averaging the A matrix and forcing SA
 - L.I., orthogonal eigenvectors for distinct eigenvalues
+- Tricky C matrix
 
-<img src="img/T36hermofA.png" alt="Trial 36, A average" style="width:800px;">
-<img src="img/T16hermofA.png" alt="Trial 36, A average" style="width:800px;">
+<img src="img/T36hermofA.png" alt="Trial 36, A average" style="width:700px;">
+<img src="img/T16hermofA.png" alt="Trial 36, A average" style="width:700px;">
 
 
 
@@ -78,11 +79,75 @@
 
 <!-- .slide: data-background="#767171" class="dark" -->
 
-## Next Steps:
-- Heat map for ML
-    - Exploratory analysis
+## Heatmaps for ML:
+- A given complex mode:
+    - $\phi_1=[1, -0.8, 0.4-0.3i, -1, 0.7+0.1i]$
+- Represent complex mode as a heatmap:
 
-- <img src="img/test_hmap.png" alt="Trial 36, A average" style="width:900px;">
+<p align="center">
+  <img src="img/test_hmap.png" alt="Trial 36, A average" style="width:600px;">
+</p>
+
+---
+
+<!-- .slide: data-background="#767171" class="dark" -->
+
+## Look at All Eigenvectors:
+
+- Both for hermitian and non-hermitian case
+- Hermitian is non-complex, but more modes
+- non-Hermitian is complex, but fewer modes
+
+
+<p align="center">
+  <img src="img/T37avgofA_heat.png" alt="Trial 36, A average" style="width:700px;">
+  <img src="img/T37hermofA_heat.png" alt="Trial 36, A average" style="width:700px;">
+</p>
+
+---
+
+<!-- .slide: data-background="#767171" class="dark" -->
+
+
+## Heatmaps for ML:
+- Ask computer to distinguish images:
+
+<p align="center">
+  <img src="img/dog_hmap.png" alt="Trial 36, A average" style="width:400px;">
+</p>
+
+---
+
+<!-- .slide: data-background="#767171" class="dark" -->
+
+
+## Consider all channels:
+- Early work with [Bruel & Kjaer](https://www.bksv.com/en/products/Analysis-software/structural-dynamics-software/modal-measurements-and-analysis/operational-modal-analysis-8760-8761-8762)
+- Treat all channels as a flat plate, look for modes
+
+<p align="center">
+  <img src="img/bruel.png" alt="Trial 36, A average" style="width:1000px;">
+</p>
+
+---
+
+<!-- .slide: data-background="#767171" class="dark" -->
+
+## What have we learned 2.0:
+- Loosing too much information in the self-adjoint transform
+    - Need least squares
+    - Need to be able to transform C matrix also
+- ML heatmap analysis may suggest the best algorithm/representation
+- Early work with all channels is promising. 
+
+
+
+
+
+
+
+
+
 
 
 

@@ -113,7 +113,8 @@
 - Ask computer to distinguish images:
 
 <p align="center">
-  <img src="img/dog_hmap.png" alt="Trial 36, A average" style="width:400px;">
+  <img src="img/ml_heat1.png" alt="Trial 36, A average" style="width:700px;">
+  <img src="img/ml_heat2.png" alt="Trial 36, A average" style="width:700px;">
 </p>
 
 ---
@@ -138,6 +139,7 @@
     - Need least squares
     - Need to be able to transform C matrix also
 - ML heatmap analysis may suggest the best algorithm/representation
+  - First pass is an improvement over time series, but still not useful
 - Early work with all channels is promising. 
 
 - All plots [here](https://drive.google.com/drive/folders/1vuMJPsxFmVqm2SRdVpqBoa8_NeZ_Jn9Y?usp=sharing)
